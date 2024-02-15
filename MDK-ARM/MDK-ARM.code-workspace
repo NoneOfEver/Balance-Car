@@ -1,0 +1,18 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "font.h": "c",
+            "iic.h": "c",
+            "dmpkey.h": "c",
+            "main.h": "c",
+            "mpu6050.h": "c",
+            "delay.h": "c"
+        }
+    },
+    "extensions": {}
+}

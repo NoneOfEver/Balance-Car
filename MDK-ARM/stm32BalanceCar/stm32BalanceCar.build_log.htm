@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ≈À noneofever@outlook.com, HNTU, LIC=RC93N-YFLGY-45CT5-GYLY8-8SH4X-G4YUT
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\STM32\stm32BalanceCar\MDK-ARM\stm32BalanceCar.uvprojx
+Project File Date:  02/13/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Rebuild target 'stm32BalanceCar'
+compiling font.c...
+assembling startup_stm32f103xb.s...
+compiling gpio.c...
+compiling dma.c...
+compiling MPU6050.c...
+..\Core\Src\MPU6050.c(400): warning:  #1-D: last line of file ends without a newline
+  }
+..\Core\Src\MPU6050.c: 1 warning, 0 errors
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_msp.c...
+compiling i2c.c...
+compiling motor.c...
+../Core/Inc/motor.h(7): warning:  #1295-D: Deprecated declaration moveForward - give arg types
+  void moveForward();
+../Core/Inc/motor.h(8): warning:  #1295-D: Deprecated declaration moveBack - give arg types
+  void moveBack();
+..\Core\Src\motor.c(24): warning:  #1-D: last line of file ends without a newline
+  }
+..\Core\Src\motor.c: 3 warnings, 0 errors
+compiling usart.c...
+compiling main.c...
+../Core/Inc/motor.h(7): warning:  #1295-D: Deprecated declaration moveForward - give arg types
+  void moveForward();
+../Core/Inc/motor.h(8): warning:  #1295-D: Deprecated declaration moveBack - give arg types
+  void moveBack();
+../Core/Inc/oled.h(13): warning:  #1295-D: Deprecated declaration OLED_Init - give arg types
+  void OLED_Init();
+../Core/Inc/oled.h(14): warning:  #1295-D: Deprecated declaration OLED_DisPlay_On - give arg types
+  void OLED_DisPlay_On();
+../Core/Inc/oled.h(15): warning:  #1295-D: Deprecated declaration OLED_DisPlay_Off - give arg types
+  void OLED_DisPlay_Off();
+../Core/Inc/oled.h(17): warning:  #1295-D: Deprecated declaration OLED_NewFrame - give arg types
+  void OLED_NewFrame();
+../Core/Inc/oled.h(18): warning:  #1295-D: Deprecated declaration OLED_ShowFrame - give arg types
+  void OLED_ShowFrame();
+../Core/Inc/oled.h(38): warning:  #1-D: last line of file ends without a newline
+  #endif // __OLED_H__
+../Core/Src/main.c(78): error:  #79: expected a type specifier
+  HAL_TIM_Base_Start_IT(&htim1);
+../Core/Src/main.c(78): error:  #260-D: explicit type is missing ("int" assumed)
+  HAL_TIM_Base_Start_IT(&htim1);
+../Core/Src/main.c(78): error:  #147: declaration is incompatible with "HAL_StatusTypeDef HAL_TIM_Base_Start_IT(TIM_HandleTypeDef *)"  (declared at line 1898 of "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h")
+  HAL_TIM_Base_Start_IT(&htim1);
+../Core/Src/main.c: 8 warnings, 3 errors
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling oled.c...
+../Core/Inc/oled.h(13): warning:  #1295-D: Deprecated declaration OLED_Init - give arg types
+  void OLED_Init();
+../Core/Inc/oled.h(14): warning:  #1295-D: Deprecated declaration OLED_DisPlay_On - give arg types
+  void OLED_DisPlay_On();
+../Core/Inc/oled.h(15): warning:  #1295-D: Deprecated declaration OLED_DisPlay_Off - give arg types
+  void OLED_DisPlay_Off();
+../Core/Inc/oled.h(17): warning:  #1295-D: Deprecated declaration OLED_NewFrame - give arg types
+  void OLED_NewFrame();
+../Core/Inc/oled.h(18): warning:  #1295-D: Deprecated declaration OLED_ShowFrame - give arg types
+  void OLED_ShowFrame();
+../Core/Inc/oled.h(38): warning:  #1-D: last line of file ends without a newline
+  #endif // __OLED_H__
+..\Core\Src\oled.c(758): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+      utf8Len = _OLED_GetUTF8Len(str + i);
+..\Core\Src\oled.c: 7 warnings, 0 errors
+compiling tim.c...
+compiling stm32f1xx_hal_i2c.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_tim.c...
+"stm32BalanceCar\stm32BalanceCar.axf" - 3 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_stm32BalanceCar
+  D:\Keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Target not created.
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
